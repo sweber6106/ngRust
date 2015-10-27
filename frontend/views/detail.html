@@ -1,0 +1,49 @@
+<div ng-controller="DetailCtrl" class="container">
+  <h2>Rustomer Detail</h2>
+  <form>
+    <div class="form-group">
+      <label for="firstName">First name</label>
+      <input type="text" class="form-control" ng-model="customerDetail.firstName" id="firstName" placeholder="{{customerDetail.firstName}}">
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last name</label>
+      <input type="text" class="form-control" ng-model="customerDetail.lastName" id="lastName" placeholder="{{customerDetail.lastName}}">
+    </div>
+    <div class="form-group">
+      <label for="company">Company</label>
+      <input type="text" class="form-control" ng-model="customerDetail.company" id="company" placeholder="{{customerDetail.company}}">
+    </div>
+    <div class="form-group">
+      <label for="address">Address</label>
+      <input type="text" class="form-control" ng-model="customerDetail.address" id="address" placeholder="{{customerDetail.address}}">
+    </div>
+    <div class="form-group">
+      <label for="city">City</label>
+      <input type="text" class="form-control" ng-model="customerDetail.city" id="city" placeholder="{{customerDetail.city}}">
+    </div>
+    <div class="form-group">
+      <label for="state">State</label>
+      <input type="text" class="form-control" ng-model="customerDetail.state" id="state" placeholder="{{customerDetail.state}}">
+    </div>
+    <div class="form-group">
+      <label for="zip">Zip</label>
+      <input type="number" class="form-control" ng-model="customerDetail.zip" id="zip" placeholder="{{customerDetail.firstName}}">
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone</label>
+      <input type="tel" class="form-control" ng-model="customerDetail.phone" id="phone" placeholder="{{customerDetail.phone}}">
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" ng-model="customerDetail.email" id="email" placeholder="{{customerDetail.email}}">
+    </div>
+    <div class="form-group">
+      <label for="domain">Domain</label>
+      <input type="text" class="form-control" ng-model="customerDetail.domain" id="domain" placeholder="{{customerDetail.domain}}">
+    </div>
+  </form>
+  
+  <button type="button" class="btn" ng-click="goBack()">Back (No save)</button>
+  <button type="button" class="btn" ng-click="updateRustacean()">Save Changes</button>
+  <button type="button" class="btn" ng-click="deleteRustacean()">Delete Rustomer</button>
+</div>

@@ -1,0 +1,16 @@
+# config.yaml
+
+default:
+  proxy:
+    scheme:                 http
+    host:                   0.0.0.0
+    port:                   8888
+  mongodb:
+    url:                    mongodb://localhost/rustafarian
+  logger:
+    level:                  debug
+    path:                   ./log/service.log
+    apiAccessLogPath:       ./log/api-access.log
+    statsLevel:             info
+    statsPath:              ./log/stats.log
+    statsLogSecs:           60

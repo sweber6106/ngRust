@@ -1,0 +1,19 @@
+{
+  "name": "crudish",
+  "version": "0.0.1",
+  "description": "CRUD support for test app",
+  "private": true,
+  "main": "app.js",
+  "dependencies": {
+    "async": "^1.4.2",
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "log4node": "^0.1.6",
+    "moment": "^2.10.6",
+    "mongoose": "^4.2.2",
+    "morgan": "^1.6.1",
+    "nopt": "^3.0.4",
+    "sprintf": "^0.1.5",
+    "yaml-config": "^0.3.0"
+  }
+}

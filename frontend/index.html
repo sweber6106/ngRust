@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>RustangularJS</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid">
+      <div id="orangeBar" class="visible-*-*">
+        <span style="margin:auto; font-size: 20pt; display:table;">
+          RustangularJS
+        </span>
+      </div>
+    
+      <nav class="col-lg-10 visible-*-*">
+        <ul class="nav nav-pills visible-*-*">
+          <li id="navHome"><a href="#/home"><i class="glyphicon glyphicon-home">&nbsp;</i>Home</a></li>
+          <li id="navLogin"><a href="#/login"><i class="glyphicon glyphicon-log-in">&nbsp;</i>Login</a></li>
+          <li id="navCustomers"><a href="#/list"><i class="glyphicon glyphicon-user">&nbsp;</i>Rustomers</a></li>
+          <li id="navContactUs"><a href="#/contact"><i class="glyphicon glyphicon-share">&nbsp;</i>Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div ng-view></div>
+
+  <footer>
+    <div class="container-fluid">
+      <div id="orangeBar" class="col-lg-12 visible-*-*">
+        <div id="topSubNav" class="text-left">
+          <div>Site version: <span app-version></span></div>
+        </div>
+      </div>  
+    </div>  
+  </footer>
+  
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="controllers/home.js"></script>
+  <script src="controllers/login.js"></script>
+  <script src="controllers/list.js"></script>
+  <script src="controllers/detail.js"></script>
+  <script src="controllers/contact.js"></script>
+  <script src="services/custlist.js"></script>
+  <script src="services/ipc.js"></script>
+  <script src="services/adder.js"></script>
+  <script src="services/deleter.js"></script>
+  <script src="services/updater.js"></script>
+  <script src="services/verifier.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+  <script src="jquery/jquery-2.1.4.js"></script>
+  <script src="bootstrap-3.3.5-dist/js/bootstrap.js"></script>
+</body>
+</html>
