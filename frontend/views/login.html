@@ -1,18 +1,27 @@
 <div ng-controller="LoginCtrl" class="container">
-  <h2>Login (Rustaceans Only)</h2>
+    <h2>Login (Knights of Ren Only)</h2>
+    <form role="form">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="username" ng-model="user.name" class="form-control" id="username" placeholder="Enter username" required>
+        </div>
 
-  <form role="form">
-    <div class="form-group">
-      <label for="username">Username:</label>
-      <input type="username" ng-model="user.name" class="form-control" id="username" placeholder="Enter username" required>
-    </div>
+        <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" ng-model="user.password" class="form-control" id="pwd" placeholder="Enter password">
+        </div>
 
-    <div class="form-group">
-      <label for="pwd">Password:</label>
-      <input type="password" ng-model="user.password" class="form-control" id="pwd" placeholder="Enter password">
-    </div>
-    
-    <button type="submit" ng-click="verifyUser(user)" class="btn btn-primary">Login</button>
-    <button type="submit" ng-click="logout()" class="btn">Logout</button>
-  </form>
+        <button type="submit" ng-click="verifyUser(user)" class="btn btn-primary">Login</button>
+        <button type="submit" ng-click="logout()" class="btn">Logout</button>
+    </form>
+    <form role="form">
+        <div class="form-group" style="margin-left:400px;">
+            <div class="lightsaber">
+                <label for="darth-vader-example"></label>
+                <input type="checkbox" id="darth-vader-example" checked="checked">
+                <div class="switch"></div>
+                <div class="plasma vader"></div>
+            </div>
+        </div>
+    </form>
 </div>
