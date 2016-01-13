@@ -1,5 +1,42 @@
 /* app css stylesheet */
+#crab{ /*name duration iteration-count*/
+  height: 500px;
+  -moz-animation: crawl 5s infinite;
+  -webkit-animation: crawl 5s infinite;
+}
+@-moz-keyframes crawl {
+    0% { -moz-transform: translateX(0px);
+    opacity: 1; 
+        }
+    50%  { -moz-transform: translateX(1000px) translatey(470px);
+       height: 0px;
+       opacity: 0;
+          }     
+    100% { -moz-transform: translateX(0px); 
+      opacity: 1;}
 
+  }
+  @-webkit-keyframes crawl {
+    0% { -webkit-transform: translateX(0px);
+    opacity: 1; 
+        }
+    50%  { -webkit-transform: translateX(1000px) translatey(470px);
+       height: 0px;
+       opacity: 0;
+          }     
+    100% { -webkit-transform: translateX(0px); 
+      opacity: 1;}
+
+  }
+#ocean{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,b2761c+0,0b87e5+100 */
+  background: #1e5799; /* Old browsers */
+  background: -moz-linear-gradient(left, #1e5799 0%, #b2761c 0%, #0b87e5 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #1e5799 0%,#b2761c 0%,#0b87e5 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #1e5799 0%,#b2761c 0%,#0b87e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#0b87e5',GradientType=1 ); /* IE6-9 */
+  height: 100px;
+  }
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
@@ -102,4 +139,9 @@ body {
 
 div.inline_buttons {
   margin-top: 20px;
+}
+#footer{
+  position: fixed;
+  top :590px;
+  width: 100%;
 }
