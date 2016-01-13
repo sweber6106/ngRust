@@ -9,8 +9,8 @@ default:
     url:                    mongodb://localhost/rustafarian
   logger:
     level:                  debug
-    path:                   ./log/service.log
-    apiAccessLogPath:       ./log/api-access.log
+    path:                   service.log
+    apiAccessLogPath:       api-access.log
     statsLevel:             info
-    statsPath:              ./log/stats.log
+    statsPath:              stats.log
     statsLogSecs:           60
