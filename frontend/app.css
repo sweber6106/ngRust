@@ -2,7 +2,7 @@
 
 .menu {
   list-style: none;
-  border-bottom: 0.1em solid black;
+  border-bottom: 0.1em solid red;
   margin-bottom: 2em;
   padding: 0 0 0.5em;
 }
@@ -30,8 +30,8 @@
 }
 
 #orangeBar {
-  background-color: #F29319;
-  color: white;
+  background-color: green;
+  color: yellow;
   margin-top: 10px;
   margin-bottom: 10px;
   padding-right: 70px;
@@ -40,12 +40,12 @@
 }
 
 #username {
-  background-color: whitesmoke;
+  background-color: purple;
   max-width: 250pt;
 }
 
 #pwd {
-  background-color: whitesmoke;
+  background-color: purple;
   max-width: 250pt;
 }
 
